@@ -20,8 +20,8 @@ order = int(args.order)
 
 # Update font settings for better readability and thickness
 rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Arial"],
+    #"font.family": "sans-serif",
+    #"font.sans-serif": ["Arial"],
     "font.size": 16,  # Increased font size
     "axes.titlesize": 16,
     "axes.labelsize": 16,
@@ -162,7 +162,7 @@ else:
 plot_two_kl_divergence(
     file1=path1,
     file2=path2,
-    save_path=os.path.join(path, 'nice_plot.png'),
+    save_path=os.path.join(path, 'plot.png'),
     order=order,
     batch_size=32
 )
