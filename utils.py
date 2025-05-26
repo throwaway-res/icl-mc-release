@@ -1,6 +1,5 @@
 import numpy as np
 import os
-os.environ['MPLCONFIGDIR'] = "/scratch/st-cthrampo-1/puneesh"
 
 import matplotlib.pyplot as plt
 
