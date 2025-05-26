@@ -6,6 +6,7 @@ import torch.optim as optim
 import numpy as np
 import torch.nn.functional as F
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("device", device)
 from gpt import GPT, gpt
 from train_gpt import train_transformer_gpt
 from utils import open_log_files
@@ -82,12 +83,12 @@ dim = args.dim
 test_seq_len = args.test_seq_len
 
 order_list = args.order_list.split(',')
-print("[DEBUG]", args.order_list, type(args.order_list))
+#print("[DEBUG]", args.order_list, type(args.order_list))
 
 
 order_list = [int(x) for x in order_list]
 
-print("[DEBUG]", order_list)
+#print("[DEBUG]", order_list)
 max_order = max(order_list)
 t_gram_list = list(range(0, max_order+3))
 
