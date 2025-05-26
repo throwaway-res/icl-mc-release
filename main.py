@@ -82,7 +82,12 @@ dim = args.dim
 test_seq_len = args.test_seq_len
 
 order_list = args.order_list.split(',')
+print("[DEBUG]", args.order_list, type(args.order_list))
+
+
 order_list = [int(x) for x in order_list]
+
+print("[DEBUG]", order_list)
 max_order = max(order_list)
 t_gram_list = list(range(0, max_order+3))
 
