@@ -1,6 +1,5 @@
 import torch
 import os
-os.environ['MPLCONFIGDIR'] = "/scratch/st-cthrampo-1/puneesh"
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
