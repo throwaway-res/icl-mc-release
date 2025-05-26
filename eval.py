@@ -1,6 +1,5 @@
 import torch
 import os
-os.environ['MPLCONFIGDIR'] = "/scratch/st-cthrampo-1/puneesh"
 import matplotlib.pyplot as plt
 
 import torch.nn as nn
